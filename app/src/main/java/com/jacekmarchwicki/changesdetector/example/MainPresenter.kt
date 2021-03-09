@@ -17,7 +17,7 @@
 package com.jacekmarchwicki.changesdetector.example
 
 import android.graphics.Color
-import com.jacekmarchwicki.universaladapter.BaseAdapterItem
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem
 import java.util.*
 import kotlin.math.min
 

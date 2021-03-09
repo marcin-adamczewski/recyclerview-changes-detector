@@ -20,6 +20,7 @@ package com.jacekmarchwicki.universaladapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.common.base.Objects;
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem;
 
 import org.junit.Test;
 

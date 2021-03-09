@@ -20,6 +20,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem
 import kotlin.reflect.KClass
 
 abstract class BaseViewHolderManager<T : BaseAdapterItem>(

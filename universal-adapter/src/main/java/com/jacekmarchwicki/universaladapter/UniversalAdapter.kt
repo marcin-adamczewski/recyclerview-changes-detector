@@ -21,6 +21,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem
 
 open class UniversalAdapter(
         private val managers: List<ViewHolderManager>
@@ -58,8 +59,8 @@ open class UniversalAdapter(
     }
 
     override fun onBindViewHolder(
-            holder: ViewHolderManager.BaseViewHolder<BaseAdapterItem>,
-            position: Int
+        holder: ViewHolderManager.BaseViewHolder<BaseAdapterItem>,
+        position: Int
     ) = holder.bind(currentList[position])
 
     override fun onFailedToRecycleView(holder: ViewHolderManager.BaseViewHolder<BaseAdapterItem>): Boolean {
@@ -85,13 +86,13 @@ open class UniversalAdapter(
         val itemDiffCallback = object : DiffUtil.ItemCallback<BaseAdapterItem>() {
 
             override fun areItemsTheSame(
-                    oldItem: BaseAdapterItem,
-                    newItem: BaseAdapterItem
+                oldItem: BaseAdapterItem,
+                newItem: BaseAdapterItem
             ): Boolean = oldItem.matches(newItem)
 
             override fun areContentsTheSame(
-                    oldItem: BaseAdapterItem,
-                    newItem: BaseAdapterItem
+                oldItem: BaseAdapterItem,
+                newItem: BaseAdapterItem
             ): Boolean = oldItem.same(newItem)
         }
     }

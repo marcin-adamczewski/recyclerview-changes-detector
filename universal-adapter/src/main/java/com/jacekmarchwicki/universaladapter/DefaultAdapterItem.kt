@@ -1,5 +1,7 @@
 package com.jacekmarchwicki.universaladapter
 
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem
+
 /**
  * Version of BaseAdapterItem with default implementation of its methods.
  * It's highly recommended that classes implementing DefaultAdapterItem are either data classes

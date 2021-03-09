@@ -19,6 +19,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.jacekmarchwicki.universaladapter.java.BaseAdapterItem
 
 /**
  * Manager that managing of creation [ViewHolderManager.BaseViewHolder]
