@@ -1,1 +1,2 @@
+include ':testlib'
 include ':app', ':universal-adapter', ':universal-adapter-java', ':universal-adapter-rx'
