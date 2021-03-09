@@ -1,5 +1,5 @@
-apply plugin: 'java-library'
 apply plugin: 'maven'
+apply plugin: 'kotlin'
 
 group = 'com.github.jacek-marchwicki.recyclerview-changes-detector'
 
